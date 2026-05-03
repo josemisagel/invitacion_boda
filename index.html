@@ -1,6 +1,243 @@
-asasa
-sasasadsadasdsadasdsadas
-sadasdsad
-ppppppp
-asdasdasdssda
-123123123
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boda de Jose Luis & Jennifer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --gold: #c5a059;
+            --cream: #fffdfa;
+            --dark: #2d2d2d;
+        }
+        body {
+            background-color: var(--cream);
+            color: var(--dark);
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .section-padding { padding: 80px 20px; }
+        .divider {
+            width: 80px;
+            height: 1px;
+            background-color: var(--gold);
+            margin: 20px auto;
+        }
+        .btn-gold {
+            background-color: var(--gold);
+            color: white;
+            padding: 14px 35px;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+            cursor: pointer;
+        }
+        .btn-gold:hover {
+            background-color: #b38f4d;
+            letter-spacing: 3px;
+        }
+        .card-gift {
+            background: white;
+            padding: 30px;
+            border-radius: 4px;
+            border: 1px solid #f0f0f0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+            transition: transform 0.3s ease;
+        }
+        .card-gift:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero-section">
+        <p class="uppercase tracking-[0.5em] mb-6 text-xs sm:text-sm font-light">Nuestra Boda</p>
+        <div class="space-y-2">
+            <h1 class="font-serif text-3xl md:text-5xl text-white opacity-90">Jose Luis Misagel Huashuayo</h1>
+            <p class="font-serif text-4xl md:text-6xl text-white">&</p>
+            <h1 class="font-serif text-3xl md:text-5xl text-white opacity-90">Jennifer Yadhira Fidel Vicente</h1>
+        </div>
+        <div class="divider" style="width: 150px; background: white;"></div>
+        <p class="text-xl md:text-3xl mt-4 font-light tracking-widest">23 . MAYO . 2026</p>
+        <p class="mt-2 opacity-80 text-lg">2:30 PM</p>
+    </header>
+
+    <!-- Palabras Bonitas debajo de la foto/hero -->
+    <section class="py-16 px-6 bg-white text-center">
+        <div class="max-w-3xl mx-auto">
+            <p class="font-serif text-xl md:text-2xl italic leading-relaxed text-stone-700">
+                "El amor no consiste en mirarse el uno al otro, sino en mirar juntos en la misma dirección. 
+                Hoy comenzamos el viaje más hermoso de nuestras vidas y nos hace inmensamente felices compartir 
+                este primer paso con ustedes."
+            </p>
+            <div class="mt-6 flex justify-center items-center gap-4">
+                <span class="h-[1px] w-12 bg-stone-200"></span>
+                <span class="text-[var(--gold)]">❤</span>
+                <span class="h-[1px] w-12 bg-stone-200"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding max-w-5xl mx-auto text-center">
+        <h2 class="font-serif text-3xl md:text-4xl mb-12 italic text-[var(--gold)]">"Dos almas, un mismo camino."</h2>
+        
+        <div class="grid md:grid-cols-2 gap-16 mt-16 px-6 text-center">
+            <div>
+                <h3 class="uppercase tracking-widest text-sm font-bold mb-6 border-b border-gray-100 pb-4">Con el amor de nuestros padres</h3>
+                <div class="space-y-6 text-gray-600">
+                    <div>
+                        <p class="text-[var(--gold)] text-xs uppercase tracking-widest mb-1">Padres de la Novia</p>
+                        <p>Ursula Patricia Vicente Vara</p>
+                        <p>Cesar Fidel Perez</p>
+                    </div>
+                    <div>
+                        <p class="text-[var(--gold)] text-xs uppercase tracking-widest mb-1">Padres del Novio</p>
+                        <p>Paulina Huashuayo Castro</p>
+                        <p>Hugo Melchor Misagel Vega</p>
+                    </div>
+                </div>
+                <p class="mt-8 text-sm italic">Gracias por ser nuestro cimiento y guía.</p>
+            </div>
+            <div>
+                <h3 class="uppercase tracking-widest text-sm font-bold mb-6 border-b border-gray-100 pb-4">Nuestros Testigos</h3>
+                <div class="space-y-4 text-gray-600">
+                    <p>Danissa Quispe Cespedes</p>
+                    <p>Ricardo Felix Pumapillo Zurita</p>
+                </div>
+                <p class="mt-6 text-gray-600 leading-relaxed px-4 text-sm">
+                    Agradecemos a quienes han aceptado ser testigos de nuestra unión y acompañarnos en el inicio de esta nueva etapa.
+                </p>
+                <div class="mt-6 p-4 border border-stone-100 inline-block">
+                    <p class="text-sm italic">"Su presencia da fe de nuestra historia"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-stone-50">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="font-serif text-4xl mb-2 text-stone-800">Recepción</h2>
+            <div class="divider"></div>
+            
+            <div class="mt-12">
+                <div class="bg-white p-10 border-b-2 border-[var(--gold)] shadow-sm max-w-lg mx-auto">
+                    <div class="text-[var(--gold)] text-4xl mb-4">🥂</div>
+                    <h3 class="font-serif text-2xl mb-4">Celebración</h3>
+                    <p class="text-gray-500 uppercase tracking-tighter text-sm mb-2">2:30 PM</p>
+                    <p class="font-semibold text-lg">Recepción</p>
+                    <p class="text-gray-600 italic">Jirón Piura 716, La Perla</p>
+                    <p class="mt-4 text-sm text-gray-400 italic">Acompáñanos a brindar por este nuevo comienzo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full h-[450px] relative border-y border-gray-100">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.832961819777!2d-77.11306382414742!3d-12.068222042013892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cb9382226259%3A0xc07a3dfc78be8c2b!2sJr.%20Piura%20716%2C%20La%20Perla%2007016!5e0!3m2!1ses-419!2spe!4v1714420000000!5m2!1ses-419!2spe" 
+            width="100%" height="100%" style="border:0; filter: grayscale(0.5);" allowfullscreen="" loading="lazy">
+        </iframe>
+        <div class="absolute inset-0 pointer-events-none bg-black/5"></div>
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2">
+            <a href="https://www.google.com/maps/search/?api=1&query=Jirón+Piura+716+La+Perla" target="_blank" class="btn-gold shadow-2xl">Cómo llegar</a>
+        </div>
+    </section>
+
+    <section class="section-padding text-center bg-white">
+        <h2 class="font-serif text-3xl mb-4 text-stone-800">Sugerencias de Regalo</h2>
+        <div class="divider"></div>
+        <p class="text-gray-600 max-w-2xl mx-auto mb-12 text-sm leading-relaxed px-4">
+            El mejor regalo es que estés presente en este día tan especial, pero si deseas darnos un obsequio tenemos estas opciones:
+        </p>
+        
+        <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
+            <div class="card-gift">
+                <div class="text-[var(--gold)] text-3xl mb-4">🏠</div>
+                <h3 class="font-bold uppercase text-xs tracking-widest mb-3">Para nuestro futuro hogar</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                    Si deseas ayudarnos a equipar nuestro nuevo hogar, cualquier detalle para la casa será bienvenido.
+                </p>
+            </div>
+
+            <div class="card-gift">
+                <div class="text-[var(--gold)] text-3xl mb-4">✉</div>
+                <h3 class="font-bold uppercase text-xs tracking-widest mb-3">Regalos en Efectivo</h3>
+                <p class="text-gray-500 text-sm italic mb-2">"Lluvia de sobres"</p>
+                <p class="text-[10px] text-gray-400 font-light leading-relaxed">
+                    Habrá una urna disponible en la entrada del salón para depositar sus sobres.
+                </p>
+            </div>
+
+            <div class="card-gift">
+                <div class="text-[var(--gold)] text-3xl mb-4">💳</div>
+                <h3 class="font-bold uppercase text-xs tracking-widest mb-3">Transferencias</h3>
+                <div class="text-left mt-4 text-[10px] space-y-4 text-gray-600">
+                    <div class="border-b border-stone-100 pb-2">
+                        <p class="font-bold text-stone-800 mb-1">BCP</p>
+                        <p><span class="text-stone-400 uppercase text-[8px] font-bold block">N° Cuenta:</span> 19392212564002</p>
+                        <p class="mt-1"><span class="text-stone-400 uppercase text-[8px] font-bold block">CCI:</span> 00219319221256400213</p>
+                    </div>
+                    <div>
+                        <p class="font-bold text-stone-800 mb-1">INTERBANK</p>
+                        <p><span class="text-stone-400 uppercase text-[8px] font-bold block">N° Cuenta:</span> 093 3203252302</p>
+                        <p class="mt-1"><span class="text-stone-400 uppercase text-[8px] font-bold block">CCI:</span> 00309301320325230220</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-stone-900 text-white text-center">
+        <h2 class="font-serif text-4xl mb-8">Confirmación de Asistencia</h2>
+        <p class="mb-10 text-stone-400 max-w-md mx-auto font-light italic">
+            Agradecemos confirmar vuestra asistencia antes del <span class="text-white font-normal">15 de mayo de 2026</span> completando el siguiente formulario:
+        </p>
+        <a href="https://forms.gle/vo918Xc5VhDcoLBp7" target="_blank" class="btn-gold !bg-white !text-black border-none hover:!bg-[var(--gold)] hover:!text-white">
+            Abrir Formulario de Confirmación
+        </a>
+    </section>
+
+    <section class="section-padding text-center bg-stone-50 border-t border-stone-100">
+        <div class="max-w-2xl mx-auto px-4">
+            <h3 class="font-serif text-3xl mb-6 italic text-stone-800">¡Gracias por ser parte de nuestra historia!</h3>
+            <p class="text-gray-600 leading-relaxed italic">
+                Estamos ansiosos por celebrar este día tan especial rodeados de las personas que más queremos. Gracias por compartir nuestra alegría y por acompañarnos en el inicio de este nuevo capítulo.
+            </p>
+            <div class="mt-8 text-[var(--gold)] text-2xl">✨</div>
+        </div>
+    </section>
+
+    <footer class="py-20 text-center">
+        <p class="font-serif text-2xl mb-4 italic text-stone-600">Con amor,</p>
+        <h2 class="font-serif text-2xl text-[var(--gold)]">Jose Luis & Jennifer</h2>
+        <div class="mt-12 text-[10px] uppercase tracking-[0.4em] text-gray-400">
+            M . XXVI . MMXXVI
+        </div>
+    </footer>
+
+</body>
+</html>
