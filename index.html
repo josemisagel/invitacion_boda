@@ -13,6 +13,7 @@
             --gold: #c5a059;
             --cream: #fffdfa;
             --dark: #2d2d2d;
+            --nude: #ebe3db;
         }
         body {
             background-color: var(--cream);
@@ -69,6 +70,10 @@
         }
         .card-gift:hover {
             transform: translateY(-5px);
+        }
+        .section-confirm-rsvp {
+            background-color: var(--nude);
+            color: var(--dark);
         }
         .btn-copy {
             display: inline-flex;
@@ -261,10 +266,10 @@
         </div>
     </section>
 
-    <section class="section-padding bg-stone-900 text-white text-center">
-        <h2 class="font-serif text-4xl mb-8">Confirmación de Asistencia</h2>
-        <p class="mb-10 text-stone-400 max-w-md mx-auto font-light italic">
-            Agradecemos confirmar vuestra asistencia antes del <span class="text-white font-normal">15 de mayo de 2026</span> completando el siguiente formulario:
+    <section class="section-padding section-confirm-rsvp text-center">
+        <h2 class="font-serif text-4xl mb-8 text-stone-800">Confirmación de Asistencia</h2>
+        <p class="mb-10 text-stone-600 max-w-md mx-auto font-light italic">
+            Agradecemos confirmar vuestra asistencia antes del <span class="text-stone-800 font-normal not-italic">15 de mayo de 2026</span> completando el siguiente formulario:
         </p>
         <a href="https://forms.gle/vo918Xc5VhDcoLBp7" target="_blank" class="btn-gold !bg-white !text-black border-none hover:!bg-[var(--gold)] hover:!text-white">
             Abrir Formulario de Confirmación
