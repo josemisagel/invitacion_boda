@@ -174,7 +174,7 @@
         <div class="welcome-overlay"></div>
         <div class="relative z-10 text-center px-6 w-full max-w-sm">
             <div class="bg-white/10 p-10 rounded-[2.5rem] backdrop-blur-md border border-white/20 shadow-2xl">
-                <h2 class="font-cormorant text-lg mb-4 text-white uppercase tracking-[0.2em] opacity-80">Nuestra Boda Civil</h2>
+                <h2 class="font-cormorant text-lg mb-4 text-white uppercase tracking-[0.2em] opacity-80">Nuestra Boda</h2>
                 <div class="space-y-3 mb-10">
                     <h1 class="font-cormorant text-4xl text-white drop-shadow-lg leading-tight">Jennifer<br>&<br>Jose Luis</h1>
                 </div>
@@ -452,13 +452,14 @@
         });
     })();
 
-    // Lógica de Música de Fondo (YouTube API)
-    const welcomeScreen = document.getElementById('welcome-screen');
+// Lógica de Música de Fondo (YouTube API)
+const welcomeScreen = document.getElementById('welcome-screen');
     const mainContent = document.getElementById('main-content');
     
     // AQUÍ ESTÁ EL ID DE TU NUEVA CANCIÓN
     const VIDEO_ID = 'M-AMu_iAcf8'; 
     let player, isPlaying = false;
+    let playOnReady = false; // NUEVO: Memoria por si hacen clic muy rápido
 
     var tag = document.createElement('script');
     tag.src = "https://www.youtube.com/iframe_api";
@@ -489,6 +490,13 @@
 
     function onPlayerReady(event) {
         event.target.setVolume(50); // Volumen a la mitad para que no asuste
+        
+        // NUEVO: Si le dieron a "Abrir" mientras YouTube cargaba, dale play ahora
+        if (playOnReady) {
+            event.target.playVideo();
+            isPlaying = true;
+            updateMusicIcon();
+        }
     }
 
     function onPlayerStateChange(event) {
@@ -503,6 +511,9 @@
             player.playVideo();
             isPlaying = true;
             updateMusicIcon();
+        } else {
+            // NUEVO: Si YouTube aún no carga, guarda la orden para cuando esté listo
+            playOnReady = true;
         }
         
         // 2. Transición suave
